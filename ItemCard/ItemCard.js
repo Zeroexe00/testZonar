@@ -11,9 +11,7 @@ class ItemCard extends ZCustomController {
   }
   onAddItem_click() {
     this.removeItem.show()
-    // console.log(this.itemname.text)
     this.addItem.hide()
-    // console.log(this.item,'itemcard')
     this.triggerEvent("add", this.item);
   }
   onRemoveItem_click() {

@@ -4,7 +4,6 @@ class Application extends ZCustomController {
 
   }
   onItemsList_addToCart(item){
-    // console.log('hola',item)
     this.listItems.push(item)
     localStorage.setItem('items',JSON.stringify(this.listItems))
     this.navbar.add(item)

@@ -1,6 +1,5 @@
 class ItemDetails extends ZCustomController {
   onThis_init(options) {
-    // console.log(options)
     if(options){
       this.productName.text = options.name
       this.productImage.view.src = options.imgUrl 
@@ -8,7 +7,6 @@ class ItemDetails extends ZCustomController {
       this.productPrice.text = '$ ' + Number(options.internetPrice.replace('.','')) * this.productQuantity.value
       // this.triggerEvent("getTotal");
     }
-    // console.log(this)
   }
   onProductQuantity_change() {
     this.productPrice.text = '$ ' + Number(this.productPrice.text.replace('$ ','').replace('.','')) * this.productQuantity.value

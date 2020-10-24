@@ -22,9 +22,7 @@ class Navbar extends ZCustomController {
       this.cart.load("../ItemInCart/ItemInCart",{...item})
     }
     this.cart.content.insertItem(item)
-    // console.log(this.dropdownCart)
     this.listItems.push(item)
-    // console.log(this.find('span#itemCounter'))
   }
   remove(id) {
     if(this.counter !== 0){
@@ -37,7 +35,6 @@ class Navbar extends ZCustomController {
     }else {
       this.counter = 0
     }
-    // console.log(this.listItems)
     this.find('span#itemCounter').innerText = this.counter;
   }
 }
