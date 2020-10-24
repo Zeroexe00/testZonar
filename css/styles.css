@@ -1,0 +1,13 @@
+.navbar {
+  background: hsl(86, 68%, 70%) !important;
+}
+#cartContainer {
+  display: flex;
+}
+.itemDetailsContainer{
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+.totalPrice {
+  border-top: 1px solid #000;
+}
