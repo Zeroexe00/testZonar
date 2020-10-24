@@ -11,3 +11,13 @@
 .totalPrice {
   border-top: 1px solid #000;
 }
+#prefix::after{
+  content: ' ';
+  white-space: pre;
+}
+#totalPrice{
+  font-weight: bold;
+}
+#productPrice {
+  font-weight: bold;
+}
